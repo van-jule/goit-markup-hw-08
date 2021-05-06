@@ -461,6 +461,7 @@ address {
 
 .socials__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .socials__item {
