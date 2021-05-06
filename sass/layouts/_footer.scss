@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--dark-bg-color);
+
+  @media screen and (max-width: 767.98px) {
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200 px) {
+    padding-top: 72px;
+  }
+}
+
+.footer__subsection-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.footer__subsection {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.footer__subsection:not(:last-child) {
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__logo {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  @media screen and (min-width: 768px) {
+    margin-top: -5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -12px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts__address {
+  color: #ffffff;
+}
+
+.contacts__mail,
+.contacts__tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-section {
+  @media screen and (min-width: px) {
+    flex-basis: calc((100% - 30px * 3) / 2 + 30px);
+  }
+}
+
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.subscribe-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+
+.button-subscribe {
+  padding: 0;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1199.98px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.button-subscribe__icon {
+  margin-left: 10px;
+  fill: #fff;
+}

@@ -1,0 +1,24 @@
+@import './vendors/modern-normalize';
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+
+@import './components/button';
+@import './components/menu';
+@import './components/mobile-menu';
+@import './components/logo';
+@import './components/social-icons';
+@import './components/modal-form';
+@import './components/modal';
+
+@import './layouts/grid';
+@import './layouts/navigation';
+@import './layouts/header';
+@import './layouts/section';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/about';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/projects';

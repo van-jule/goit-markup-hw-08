@@ -1,0 +1,78 @@
+.hero {
+  // padding-top: 118px;
+  // padding-bottom: 118px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__title {
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 700px;
+  }
+}
+
+.hero__button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-overlay {
+  height: 400px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/mobile/bcg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/mobile/bcg-mobile@2px.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/tablet/bcg-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/tablet/bcg-tablet@2px.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/desktop/bcg-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/desktop/bcg-desktop@2px.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
