@@ -1,15 +1,28 @@
 .project-control {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     justify-content: center;
+  }
+
+  @media scren and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
 .project-control__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.project-control__item {
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .project-control__button {
@@ -43,7 +56,6 @@
   box-sizing: border-box;
   --grid-item: 1;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   transition: filter 250ms var(--timming-function);
 
   @media screen and (min-width: 768px) {
@@ -84,6 +96,7 @@
 }
 
 .project-card__text {
+  text-align: start;
   font-size: 18px;
   line-height: 1.56;
 }
@@ -105,5 +118,16 @@
 }
 
 .project-content {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
   padding: 20px 24px;
+  flex-grow: 1;
+}
+
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

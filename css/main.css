@@ -861,7 +861,7 @@ address {
   padding-bottom: 60px;
 }
 
-@media screen and (mon-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -870,11 +870,18 @@ address {
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 30px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .hero {
@@ -884,13 +891,14 @@ address {
 }
 
 .hero__title {
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -1035,8 +1043,15 @@ address {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.15;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -1322,17 +1337,34 @@ address {
 .project-control {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
   .project-control {
+    margin-bottom: 30px;
     justify-content: center;
+  }
+}
+
+@media scren and (min-width: 1200px) {
+  .project-control {
+    margin-bottom: 50px;
   }
 }
 
 .project-control__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.project-control__item {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-control__item {
+    margin-bottom: 0;
+  }
 }
 
 .project-control__button {
@@ -1362,7 +1394,6 @@ address {
   box-sizing: border-box;
   --grid-item: 1;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   transition: filter 250ms var(--timming-function);
 }
 
@@ -1405,6 +1436,7 @@ address {
 }
 
 .project-card__text {
+  text-align: start;
   font-size: 18px;
   line-height: 1.56;
 }
@@ -1426,6 +1458,16 @@ address {
 }
 
 .project-content {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
+}
+
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

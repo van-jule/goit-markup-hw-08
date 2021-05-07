@@ -1,20 +1,19 @@
 .hero {
-  // padding-top: 118px;
-  // padding-bottom: 118px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .hero__title {
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
